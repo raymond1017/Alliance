@@ -1,0 +1,3 @@
+[submodule "Alliance/Dungeons"]
+	path = Alliance/Dungeons
+	url = https://github.com/raymond1017/Dungeons.git

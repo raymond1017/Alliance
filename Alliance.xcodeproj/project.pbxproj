@@ -21,6 +21,11 @@
 		2F1C609B197C09E5004D3C2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1C607D197C09E4004D3C2A /* UIKit.framework */; };
 		2F1C60A3197C09E5004D3C2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F1C60A1197C09E5004D3C2A /* InfoPlist.strings */; };
 		2F1C60A5197C09E5004D3C2A /* AllianceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C60A4197C09E5004D3C2A /* AllianceTests.m */; };
+		2F8C7909197CCB700071297C /* DungeonsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C7905197CCB700071297C /* DungeonsVC.m */; };
+		2F8C790A197CCB700071297C /* minback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C7906197CCB700071297C /* minback@2x.png */; };
+		2F8C790B197CCB700071297C /* SoloVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C7908197CCB700071297C /* SoloVC.m */; };
+		2F8C790E197CCD5C0071297C /* Orgrimar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C790D197CCD5C0071297C /* Orgrimar.m */; };
+		2F8C7911197CCDB10071297C /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C7910197CCDB10071297C /* NSBundle+Language.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		2F1C60A0197C09E5004D3C2A /* AllianceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllianceTests-Info.plist"; sourceTree = "<group>"; };
 		2F1C60A2197C09E5004D3C2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F1C60A4197C09E5004D3C2A /* AllianceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllianceTests.m; sourceTree = "<group>"; };
+		2F8C7904197CCB700071297C /* DungeonsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DungeonsVC.h; path = Dungeons/DungeonsVC.h; sourceTree = "<group>"; };
+		2F8C7905197CCB700071297C /* DungeonsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DungeonsVC.m; path = Dungeons/DungeonsVC.m; sourceTree = "<group>"; };
+		2F8C7906197CCB700071297C /* minback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "minback@2x.png"; path = "Dungeons/minback@2x.png"; sourceTree = "<group>"; };
+		2F8C7907197CCB700071297C /* SoloVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoloVC.h; path = Dungeons/SoloVC.h; sourceTree = "<group>"; };
+		2F8C7908197CCB700071297C /* SoloVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoloVC.m; path = Dungeons/SoloVC.m; sourceTree = "<group>"; };
+		2F8C790C197CCD5C0071297C /* Orgrimar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Orgrimar.h; path = Dungeons/Orgrimar.h; sourceTree = "<group>"; };
+		2F8C790D197CCD5C0071297C /* Orgrimar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Orgrimar.m; path = Dungeons/Orgrimar.m; sourceTree = "<group>"; };
+		2F8C790F197CCDB10071297C /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+Language.h"; path = "Dungeons/NSBundle+Language.h"; sourceTree = "<group>"; };
+		2F8C7910197CCDB10071297C /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+Language.m"; path = "Dungeons/NSBundle+Language.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,7 @@
 		2F1C607F197C09E4004D3C2A /* Alliance */ = {
 			isa = PBXGroup;
 			children = (
+				2F8C7903197CCB5E0071297C /* Dungeons */,
 				2F563345197CBEA900974305 /* Service+bean */,
 				2F563344197CBEA200974305 /* Service */,
 				2F563343197CBE7100974305 /* VC+Detail */,
@@ -182,6 +197,22 @@
 			children = (
 			);
 			name = "Service+bean";
+			sourceTree = "<group>";
+		};
+		2F8C7903197CCB5E0071297C /* Dungeons */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C790F197CCDB10071297C /* NSBundle+Language.h */,
+				2F8C7910197CCDB10071297C /* NSBundle+Language.m */,
+				2F8C790C197CCD5C0071297C /* Orgrimar.h */,
+				2F8C790D197CCD5C0071297C /* Orgrimar.m */,
+				2F8C7904197CCB700071297C /* DungeonsVC.h */,
+				2F8C7905197CCB700071297C /* DungeonsVC.m */,
+				2F8C7906197CCB700071297C /* minback@2x.png */,
+				2F8C7907197CCB700071297C /* SoloVC.h */,
+				2F8C7908197CCB700071297C /* SoloVC.m */,
+			);
+			name = Dungeons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8C790A197CCB700071297C /* minback@2x.png in Resources */,
 				2F1C6092197C09E4004D3C2A /* Images.xcassets in Resources */,
 				2F1C6084197C09E4004D3C2A /* InfoPlist.strings in Resources */,
 				2F1C608D197C09E4004D3C2A /* Main.storyboard in Resources */,
@@ -283,7 +315,11 @@
 			files = (
 				2F1C6090197C09E4004D3C2A /* ViewController.m in Sources */,
 				2F1C608A197C09E4004D3C2A /* AppDelegate.m in Sources */,
+				2F8C790E197CCD5C0071297C /* Orgrimar.m in Sources */,
 				2F1C6086197C09E4004D3C2A /* main.m in Sources */,
+				2F8C7911197CCDB10071297C /* NSBundle+Language.m in Sources */,
+				2F8C790B197CCB700071297C /* SoloVC.m in Sources */,
+				2F8C7909197CCB700071297C /* DungeonsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
