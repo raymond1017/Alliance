@@ -7,12 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import "Orgrimar.h"
+#import "StratholmeVC.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [Orgrimar instance];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.backgroundColor = [UIColor blackColor];
+    [self.window makeKeyAndVisible];
+    
+    StratholmeVC* vc = [StratholmeVC new];
+    self.window.rootViewController = vc;
     return YES;
 }
 							

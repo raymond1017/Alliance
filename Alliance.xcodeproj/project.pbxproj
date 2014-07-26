@@ -21,11 +21,26 @@
 		2F1C609B197C09E5004D3C2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1C607D197C09E4004D3C2A /* UIKit.framework */; };
 		2F1C60A3197C09E5004D3C2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F1C60A1197C09E5004D3C2A /* InfoPlist.strings */; };
 		2F1C60A5197C09E5004D3C2A /* AllianceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C60A4197C09E5004D3C2A /* AllianceTests.m */; };
-		2F8C7909197CCB700071297C /* DungeonsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C7905197CCB700071297C /* DungeonsVC.m */; };
-		2F8C790A197CCB700071297C /* minback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C7906197CCB700071297C /* minback@2x.png */; };
-		2F8C790B197CCB700071297C /* SoloVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C7908197CCB700071297C /* SoloVC.m */; };
-		2F8C790E197CCD5C0071297C /* Orgrimar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C790D197CCD5C0071297C /* Orgrimar.m */; };
-		2F8C7911197CCDB10071297C /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C7910197CCDB10071297C /* NSBundle+Language.m */; };
+		2FB84BDB198123EE002B807F /* DungeonsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BCD198123EE002B807F /* DungeonsVC.m */; };
+		2FB84BDC198123EE002B807F /* minback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB84BCE198123EE002B807F /* minback@2x.png */; };
+		2FB84BDD198123EE002B807F /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BD0198123EE002B807F /* NSBundle+Language.m */; };
+		2FB84BDE198123EE002B807F /* NSMutableDictionary+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BD2198123EE002B807F /* NSMutableDictionary+Request.m */; };
+		2FB84BDF198123EE002B807F /* NSMutableDictionary+Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BD4198123EE002B807F /* NSMutableDictionary+Response.m */; };
+		2FB84BE0198123EE002B807F /* NSMutableDictionary+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BD6198123EE002B807F /* NSMutableDictionary+Status.m */; };
+		2FB84BE1198123EE002B807F /* Orgrimar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BD8198123EE002B807F /* Orgrimar.m */; };
+		2FB84BE2198123EE002B807F /* SoloVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BDA198123EE002B807F /* SoloVC.m */; };
+		2FB84BE8198126D5002B807F /* StratholmeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BE7198126D5002B807F /* StratholmeVC.m */; };
+		2FB84BEB1981276E002B807F /* LivingSideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BEA1981276E002B807F /* LivingSideVC.m */; };
+		2FB84BEE1981278C002B807F /* UndeadSideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BED1981278C002B807F /* UndeadSideVC.m */; };
+		2FB84BF71981281E002B807F /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BF01981281E002B807F /* UIHelper.m */; };
+		2FB84BF81981281E002B807F /* UIImageView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BF21981281E002B807F /* UIImageView+Util.m */; };
+		2FB84BF91981281E002B807F /* UILabel+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BF41981281E002B807F /* UILabel+Util.m */; };
+		2FB84BFA1981281E002B807F /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BF61981281E002B807F /* UIView+Util.m */; };
+		2FB84BFE19813764002B807F /* MissionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BFD19813764002B807F /* MissionCell.m */; };
+		2FB84C0119813876002B807F /* TheDarkPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84C0019813876002B807F /* TheDarkPortal.m */; };
+		2FB84C041981F259002B807F /* OldCrafty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84C031981F259002B807F /* OldCrafty.m */; };
+		2FB84C0A1981F4F4002B807F /* NSMutableDictionary+Mission.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84C091981F4F4002B807F /* NSMutableDictionary+Mission.m */; };
+		2FBA0D78197CFEB100B8C280 /* Dungeons.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FBA0D7A197CFEB100B8C280 /* Dungeons.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,15 +73,44 @@
 		2F1C60A0197C09E5004D3C2A /* AllianceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllianceTests-Info.plist"; sourceTree = "<group>"; };
 		2F1C60A2197C09E5004D3C2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F1C60A4197C09E5004D3C2A /* AllianceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllianceTests.m; sourceTree = "<group>"; };
-		2F8C7904197CCB700071297C /* DungeonsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DungeonsVC.h; path = Dungeons/DungeonsVC.h; sourceTree = "<group>"; };
-		2F8C7905197CCB700071297C /* DungeonsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DungeonsVC.m; path = Dungeons/DungeonsVC.m; sourceTree = "<group>"; };
-		2F8C7906197CCB700071297C /* minback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "minback@2x.png"; path = "Dungeons/minback@2x.png"; sourceTree = "<group>"; };
-		2F8C7907197CCB700071297C /* SoloVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoloVC.h; path = Dungeons/SoloVC.h; sourceTree = "<group>"; };
-		2F8C7908197CCB700071297C /* SoloVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoloVC.m; path = Dungeons/SoloVC.m; sourceTree = "<group>"; };
-		2F8C790C197CCD5C0071297C /* Orgrimar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Orgrimar.h; path = Dungeons/Orgrimar.h; sourceTree = "<group>"; };
-		2F8C790D197CCD5C0071297C /* Orgrimar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Orgrimar.m; path = Dungeons/Orgrimar.m; sourceTree = "<group>"; };
-		2F8C790F197CCDB10071297C /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+Language.h"; path = "Dungeons/NSBundle+Language.h"; sourceTree = "<group>"; };
-		2F8C7910197CCDB10071297C /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+Language.m"; path = "Dungeons/NSBundle+Language.m"; sourceTree = "<group>"; };
+		2FB84BCC198123EE002B807F /* DungeonsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DungeonsVC.h; sourceTree = "<group>"; };
+		2FB84BCD198123EE002B807F /* DungeonsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DungeonsVC.m; sourceTree = "<group>"; };
+		2FB84BCE198123EE002B807F /* minback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minback@2x.png"; sourceTree = "<group>"; };
+		2FB84BCF198123EE002B807F /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		2FB84BD0198123EE002B807F /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		2FB84BD1198123EE002B807F /* NSMutableDictionary+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Request.h"; sourceTree = "<group>"; };
+		2FB84BD2198123EE002B807F /* NSMutableDictionary+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Request.m"; sourceTree = "<group>"; };
+		2FB84BD3198123EE002B807F /* NSMutableDictionary+Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Response.h"; sourceTree = "<group>"; };
+		2FB84BD4198123EE002B807F /* NSMutableDictionary+Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Response.m"; sourceTree = "<group>"; };
+		2FB84BD5198123EE002B807F /* NSMutableDictionary+Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Status.h"; sourceTree = "<group>"; };
+		2FB84BD6198123EE002B807F /* NSMutableDictionary+Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Status.m"; sourceTree = "<group>"; };
+		2FB84BD7198123EE002B807F /* Orgrimar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orgrimar.h; sourceTree = "<group>"; };
+		2FB84BD8198123EE002B807F /* Orgrimar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Orgrimar.m; sourceTree = "<group>"; };
+		2FB84BD9198123EE002B807F /* SoloVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoloVC.h; sourceTree = "<group>"; };
+		2FB84BDA198123EE002B807F /* SoloVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoloVC.m; sourceTree = "<group>"; };
+		2FB84BE6198126D5002B807F /* StratholmeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StratholmeVC.h; sourceTree = "<group>"; };
+		2FB84BE7198126D5002B807F /* StratholmeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StratholmeVC.m; sourceTree = "<group>"; };
+		2FB84BE91981276E002B807F /* LivingSideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivingSideVC.h; sourceTree = "<group>"; };
+		2FB84BEA1981276E002B807F /* LivingSideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivingSideVC.m; sourceTree = "<group>"; };
+		2FB84BEC1981278C002B807F /* UndeadSideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndeadSideVC.h; sourceTree = "<group>"; };
+		2FB84BED1981278C002B807F /* UndeadSideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndeadSideVC.m; sourceTree = "<group>"; };
+		2FB84BEF1981281E002B807F /* UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHelper.h; sourceTree = "<group>"; };
+		2FB84BF01981281E002B807F /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIHelper.m; sourceTree = "<group>"; };
+		2FB84BF11981281E002B807F /* UIImageView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Util.h"; sourceTree = "<group>"; };
+		2FB84BF21981281E002B807F /* UIImageView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Util.m"; sourceTree = "<group>"; };
+		2FB84BF31981281E002B807F /* UILabel+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Util.h"; sourceTree = "<group>"; };
+		2FB84BF41981281E002B807F /* UILabel+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Util.m"; sourceTree = "<group>"; };
+		2FB84BF51981281E002B807F /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
+		2FB84BF61981281E002B807F /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		2FB84BFC19813764002B807F /* MissionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionCell.h; sourceTree = "<group>"; };
+		2FB84BFD19813764002B807F /* MissionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionCell.m; sourceTree = "<group>"; };
+		2FB84BFF19813876002B807F /* TheDarkPortal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheDarkPortal.h; sourceTree = "<group>"; };
+		2FB84C0019813876002B807F /* TheDarkPortal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheDarkPortal.m; sourceTree = "<group>"; };
+		2FB84C021981F259002B807F /* OldCrafty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldCrafty.h; sourceTree = "<group>"; };
+		2FB84C031981F259002B807F /* OldCrafty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldCrafty.m; sourceTree = "<group>"; };
+		2FB84C081981F4F4002B807F /* NSMutableDictionary+Mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Mission.h"; sourceTree = "<group>"; };
+		2FB84C091981F4F4002B807F /* NSMutableDictionary+Mission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Mission.m"; sourceTree = "<group>"; };
+		2FBA0D7B197CFEDA00B8C280 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Dungeons.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +170,8 @@
 		2F1C607F197C09E4004D3C2A /* Alliance */ = {
 			isa = PBXGroup;
 			children = (
-				2F8C7903197CCB5E0071297C /* Dungeons */,
+				2FB84BFB19812D2B002B807F /* Cell */,
+				2FB84BCB198123EE002B807F /* Dungeons */,
 				2F563345197CBEA900974305 /* Service+bean */,
 				2F563344197CBEA200974305 /* Service */,
 				2F563343197CBE7100974305 /* VC+Detail */,
@@ -149,6 +194,7 @@
 				2F1C6082197C09E4004D3C2A /* InfoPlist.strings */,
 				2F1C6085197C09E4004D3C2A /* main.m */,
 				2F1C6087197C09E4004D3C2A /* Alliance-Prefix.pch */,
+				2FBA0D7A197CFEB100B8C280 /* Dungeons.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,6 +220,12 @@
 		2F563342197CBE6300974305 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				2FB84BE6198126D5002B807F /* StratholmeVC.h */,
+				2FB84BE7198126D5002B807F /* StratholmeVC.m */,
+				2FB84BE91981276E002B807F /* LivingSideVC.h */,
+				2FB84BEA1981276E002B807F /* LivingSideVC.m */,
+				2FB84BEC1981278C002B807F /* UndeadSideVC.h */,
+				2FB84BED1981278C002B807F /* UndeadSideVC.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -188,6 +240,10 @@
 		2F563344197CBEA200974305 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2FB84BFF19813876002B807F /* TheDarkPortal.h */,
+				2FB84C0019813876002B807F /* TheDarkPortal.m */,
+				2FB84C021981F259002B807F /* OldCrafty.h */,
+				2FB84C031981F259002B807F /* OldCrafty.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -195,24 +251,49 @@
 		2F563345197CBEA900974305 /* Service+bean */ = {
 			isa = PBXGroup;
 			children = (
+				2FB84C081981F4F4002B807F /* NSMutableDictionary+Mission.h */,
+				2FB84C091981F4F4002B807F /* NSMutableDictionary+Mission.m */,
 			);
 			name = "Service+bean";
 			sourceTree = "<group>";
 		};
-		2F8C7903197CCB5E0071297C /* Dungeons */ = {
+		2FB84BCB198123EE002B807F /* Dungeons */ = {
 			isa = PBXGroup;
 			children = (
-				2F8C790F197CCDB10071297C /* NSBundle+Language.h */,
-				2F8C7910197CCDB10071297C /* NSBundle+Language.m */,
-				2F8C790C197CCD5C0071297C /* Orgrimar.h */,
-				2F8C790D197CCD5C0071297C /* Orgrimar.m */,
-				2F8C7904197CCB700071297C /* DungeonsVC.h */,
-				2F8C7905197CCB700071297C /* DungeonsVC.m */,
-				2F8C7906197CCB700071297C /* minback@2x.png */,
-				2F8C7907197CCB700071297C /* SoloVC.h */,
-				2F8C7908197CCB700071297C /* SoloVC.m */,
+				2FB84BEF1981281E002B807F /* UIHelper.h */,
+				2FB84BF01981281E002B807F /* UIHelper.m */,
+				2FB84BF11981281E002B807F /* UIImageView+Util.h */,
+				2FB84BF21981281E002B807F /* UIImageView+Util.m */,
+				2FB84BF31981281E002B807F /* UILabel+Util.h */,
+				2FB84BF41981281E002B807F /* UILabel+Util.m */,
+				2FB84BF51981281E002B807F /* UIView+Util.h */,
+				2FB84BF61981281E002B807F /* UIView+Util.m */,
+				2FB84BCC198123EE002B807F /* DungeonsVC.h */,
+				2FB84BCD198123EE002B807F /* DungeonsVC.m */,
+				2FB84BCE198123EE002B807F /* minback@2x.png */,
+				2FB84BCF198123EE002B807F /* NSBundle+Language.h */,
+				2FB84BD0198123EE002B807F /* NSBundle+Language.m */,
+				2FB84BD1198123EE002B807F /* NSMutableDictionary+Request.h */,
+				2FB84BD2198123EE002B807F /* NSMutableDictionary+Request.m */,
+				2FB84BD3198123EE002B807F /* NSMutableDictionary+Response.h */,
+				2FB84BD4198123EE002B807F /* NSMutableDictionary+Response.m */,
+				2FB84BD5198123EE002B807F /* NSMutableDictionary+Status.h */,
+				2FB84BD6198123EE002B807F /* NSMutableDictionary+Status.m */,
+				2FB84BD7198123EE002B807F /* Orgrimar.h */,
+				2FB84BD8198123EE002B807F /* Orgrimar.m */,
+				2FB84BD9198123EE002B807F /* SoloVC.h */,
+				2FB84BDA198123EE002B807F /* SoloVC.m */,
 			);
-			name = Dungeons;
+			path = Dungeons;
+			sourceTree = "<group>";
+		};
+		2FB84BFB19812D2B002B807F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2FB84BFC19813764002B807F /* MissionCell.h */,
+				2FB84BFD19813764002B807F /* MissionCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +355,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 2F1C606D197C09E4004D3C2A;
 			productRefGroup = 2F1C6077197C09E4004D3C2A /* Products */;
@@ -291,10 +373,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8C790A197CCB700071297C /* minback@2x.png in Resources */,
 				2F1C6092197C09E4004D3C2A /* Images.xcassets in Resources */,
 				2F1C6084197C09E4004D3C2A /* InfoPlist.strings in Resources */,
 				2F1C608D197C09E4004D3C2A /* Main.storyboard in Resources */,
+				2FB84BDC198123EE002B807F /* minback@2x.png in Resources */,
+				2FBA0D78197CFEB100B8C280 /* Dungeons.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,13 +396,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB84C0A1981F4F4002B807F /* NSMutableDictionary+Mission.m in Sources */,
+				2FB84BFE19813764002B807F /* MissionCell.m in Sources */,
+				2FB84BF91981281E002B807F /* UILabel+Util.m in Sources */,
+				2FB84BEE1981278C002B807F /* UndeadSideVC.m in Sources */,
+				2FB84C0119813876002B807F /* TheDarkPortal.m in Sources */,
 				2F1C6090197C09E4004D3C2A /* ViewController.m in Sources */,
+				2FB84BE8198126D5002B807F /* StratholmeVC.m in Sources */,
+				2FB84BDD198123EE002B807F /* NSBundle+Language.m in Sources */,
 				2F1C608A197C09E4004D3C2A /* AppDelegate.m in Sources */,
-				2F8C790E197CCD5C0071297C /* Orgrimar.m in Sources */,
+				2FB84BF71981281E002B807F /* UIHelper.m in Sources */,
+				2FB84BE2198123EE002B807F /* SoloVC.m in Sources */,
+				2FB84C041981F259002B807F /* OldCrafty.m in Sources */,
+				2FB84BDE198123EE002B807F /* NSMutableDictionary+Request.m in Sources */,
+				2FB84BDF198123EE002B807F /* NSMutableDictionary+Response.m in Sources */,
 				2F1C6086197C09E4004D3C2A /* main.m in Sources */,
-				2F8C7911197CCDB10071297C /* NSBundle+Language.m in Sources */,
-				2F8C790B197CCB700071297C /* SoloVC.m in Sources */,
-				2F8C7909197CCB700071297C /* DungeonsVC.m in Sources */,
+				2FB84BFA1981281E002B807F /* UIView+Util.m in Sources */,
+				2FB84BEB1981276E002B807F /* LivingSideVC.m in Sources */,
+				2FB84BDB198123EE002B807F /* DungeonsVC.m in Sources */,
+				2FB84BE0198123EE002B807F /* NSMutableDictionary+Status.m in Sources */,
+				2FB84BF81981281E002B807F /* UIImageView+Util.m in Sources */,
+				2FB84BE1198123EE002B807F /* Orgrimar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +463,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		2FBA0D7A197CFEB100B8C280 /* Dungeons.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FBA0D7B197CFEDA00B8C280 /* zh-Hans */,
+			);
+			name = Dungeons.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -385,6 +490,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -423,7 +529,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZHAOHUI SUN (PHU454DK2H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ZHAOHUI SUN (PHU454DK2H)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
