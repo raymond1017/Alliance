@@ -11,12 +11,16 @@
 @implementation NSMutableDictionary(Mission)
 
 
--(NSArray*) mission_items {
-    return [self objectForKey:@"items"];
+-(NSMutableArray*) mission_items {
+    return [self objectForKey:@"orders"];
+}
+
+-(NSString*) mission_id {
+    return [self objectForKey:@"orderId"];
 }
 
 -(NSString*) mission_item_time {
-    return [self objectForKey:@"time"];
+    return [self objectForKey:@"orderTime"];
 }
 
 -(NSString*) mission_item_weather {

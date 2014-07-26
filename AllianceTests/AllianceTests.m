@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TheDarkPortal.h"
 
 @interface AllianceTests : XCTestCase
 
@@ -28,7 +29,13 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
+    [TheDarkPortal queryNewMissionWithDriverID:@"1" andDate:@"2014-07-26 21:16:12" onSucceed:^(NSMutableDictionary* succeed){
+        
+    }onFailure:^(NSMutableDictionary* status) {
+        
+    }];
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define CELL_HEIGHT 120
+#define CELL_HEIGHT 200
 @interface MissionCell : UITableViewCell
 @property (strong, nonatomic) NSMutableDictionary* mission;
 @end

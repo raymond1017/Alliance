@@ -9,9 +9,15 @@
 #import "StratholmeVC.h"
 #import "LivingSideVC.h"
 #import "UndeadSideVC.h"
+#import "UIView+Util.h"
+#import "MissionView.h"
+#import "TheDarkPortal.h"
+#import "NSMutableDictionary+Mission.h"
 
-@interface StratholmeVC ()
+@interface StratholmeVC () <MissionDelegate>
+@property (strong, nonatomic) UIView* mission_background;
 
+@property (strong, nonatomic) NSMutableArray* missions;
 @end
 
 @implementation StratholmeVC
@@ -44,6 +50,15 @@
     
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
+    
+    
+    NSMutableDictionary* dict = [NSMutableDictionary new];
+    [dict setValue:@"hello" forKey:@"test"];
+    
+    self.missions = [NSMutableArray new];
+    
+    
+    [self timerRequest];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,4 +78,61 @@
 }
 */
 
+
+-(void) timerRequest {
+    int64_t delay = 2.0f;
+    dispatch_time_t timer = dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC);
+    
+    dispatch_after(timer, dispatch_get_main_queue(), ^(void){
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+            NSString* date = @"2014-07-21 21:16:12";
+            if([self.missions count] > 0){
+                date = [[self.missions lastObject] mission_item_time];
+            }
+            [TheDarkPortal queryNewMissionWithDriverID:@"1" andDate:date onSucceed:^(NSMutableDictionary* succeed){
+                do{
+                    if([self.missions count] < 1){
+                        [self.missions addObjectsFromArray:[succeed mission_items]];
+                        break;
+                    }
+                    [self.missions addObjectsFromArray:[succeed mission_items]];
+                    
+                    if([[succeed mission_items] count] < 1){
+                        break;
+                    }
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^(void){
+                        
+                        NSMutableDictionary* dict = [[succeed mission_items] lastObject];
+                        
+                        MissionView* mission = [[MissionView alloc] initWithFrame:self.view.bounds andMission:dict];
+                        [self.view addSubview:mission];
+                        mission.missionDeleagate = self;
+                    });
+                    
+                    
+                }while (false);
+                [self timerRequest];
+                
+                
+            }onFailure:^(NSMutableDictionary* status) {
+                [self timerRequest];
+            }];
+            
+            
+        });
+    });
+}
+
+
+#pragma mark - handler mission
+
+-(void) handleAcceptMission:(NSMutableDictionary *)mission {
+    [TheDarkPortal commitMissionConfirm:[mission mission_item_time] andOrderID:[mission mission_id] onSucceed:^(NSMutableDictionary* succeed){
+        
+    }onFailure:^(NSMutableDictionary* status){
+        
+    }];
+}
 @end

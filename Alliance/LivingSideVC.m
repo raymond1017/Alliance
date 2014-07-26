@@ -41,9 +41,10 @@
     
     {
         UITableView* table = [[UITableView alloc] initWithFrame:container.bounds];
-        
+        table.separatorStyle = UITableViewCellSeparatorStyleNone;
         table.dataSource = self;
         table.delegate = self;
+        table.backgroundColor = [UIColor clearColor];
         self.tableView = table;
         [container addSubview:table];
     }
@@ -78,6 +79,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 #pragma mark - TableView delegate
 
@@ -116,12 +118,14 @@
     static NSString *cellIdentifier = @"itemCell";
     
     NSInteger index = indexPath.row;
-//    NSArray* pairItem = [self.array objectAtIndex:index];
+    NSMutableDictionary* item = [self.array objectAtIndex:index];
     
     MissionCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if(cell == nil) {
         cell = [[MissionCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
+    
+    [cell setMission:item];
     
 //    [cell setStorageItems:pairItem];
     return cell;

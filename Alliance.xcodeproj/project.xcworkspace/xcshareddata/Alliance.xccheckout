@@ -5,11 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4DF641A5-3008-44FF-8B7E-BB45FE959517</string>
+	<string>1807BF37-4200-4E6C-9EAC-1E51C8736ACF</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Alliance</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>46010D7B-FB15-44E3-A961-8F33F471F983</key>
+		<string>https://github.com/raymond1017/Dungeons.git</string>
 		<key>D2DA4096-E892-4828-AC0B-0F033637EEF1</key>
 		<string>https://github.com/raymond1017/Alliance.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>Alliance.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>46010D7B-FB15-44E3-A961-8F33F471F983</key>
+		<string>../../Alliance/Dungeons</string>
 		<key>D2DA4096-E892-4828-AC0B-0F033637EEF1</key>
 		<string>../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>D2DA4096-E892-4828-AC0B-0F033637EEF1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Alliance</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>46010D7B-FB15-44E3-A961-8F33F471F983</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Dungeons</string>
 		</dict>
 	</array>
 </dict>

@@ -11,10 +11,16 @@
 "Main_Tab_Mission" = "待办事项";
 
 "Main_Cell_Time" = "时间";
-"Main_Cell_Cost" = "预估金额";
+"Main_Cell_Bill" = "预估金额";
 
 "Main_Cell_Status_Confirm" = "我已出发";
 "Main_Cell_Status_Arrived" = "我已到达";
 "Main_Cell_status_Picking" = "我已接客";
 
-"Main_Cell_ViewCheckPoint" = "查找接驳点";
+"Main_Mission_Start" = "起点";
+"Main_Mission_End" = "终点";
+
+"Main_Cell_ViewCheckPoint" = "查看导航";
+
+"Main_Mission_Accept" = "抢单";
+"Main_Mission_Back" = "返回";

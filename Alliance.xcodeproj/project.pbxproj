@@ -21,6 +21,21 @@
 		2F1C609B197C09E5004D3C2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1C607D197C09E4004D3C2A /* UIKit.framework */; };
 		2F1C60A3197C09E5004D3C2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F1C60A1197C09E5004D3C2A /* InfoPlist.strings */; };
 		2F1C60A5197C09E5004D3C2A /* AllianceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C60A4197C09E5004D3C2A /* AllianceTests.m */; };
+		2F9B641C198349D3003EF37F /* 我已出发.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6414198349D3003EF37F /* 我已出发.png */; };
+		2F9B641D198349D3003EF37F /* 接机.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6415198349D3003EF37F /* 接机.png */; };
+		2F9B641E198349D3003EF37F /* 查看导航.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6416198349D3003EF37F /* 查看导航.png */; };
+		2F9B641F198349D3003EF37F /* 查看导航_方向.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6417198349D3003EF37F /* 查看导航_方向.png */; };
+		2F9B6420198349D3003EF37F /* 终点.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6418198349D3003EF37F /* 终点.png */; };
+		2F9B6421198349D3003EF37F /* 起点.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6419198349D3003EF37F /* 起点.png */; };
+		2F9B6422198349D3003EF37F /* 雷阵雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B641A198349D3003EF37F /* 雷阵雨.png */; };
+		2F9B6423198349D3003EF37F /* 预约用车.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B641B198349D3003EF37F /* 预约用车.png */; };
+		2F9B642A198390D4003EF37F /* 订单提示.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6424198390D4003EF37F /* 订单提示.png */; };
+		2F9B642B198390D4003EF37F /* 返回.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6425198390D4003EF37F /* 返回.png */; };
+		2F9B642C198390D4003EF37F /* 起点_订单提示.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6426198390D4003EF37F /* 起点_订单提示.png */; };
+		2F9B642D198390D4003EF37F /* 抢单.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6427198390D4003EF37F /* 抢单.png */; };
+		2F9B642E198390D4003EF37F /* 终点_订单提示.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6428198390D4003EF37F /* 终点_订单提示.png */; };
+		2F9B642F198390D4003EF37F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6429198390D4003EF37F /* bg.png */; };
+		2F9B64321983B73F003EF37F /* MissionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B64311983B73F003EF37F /* MissionView.m */; };
 		2FB84BDB198123EE002B807F /* DungeonsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BCD198123EE002B807F /* DungeonsVC.m */; };
 		2FB84BDC198123EE002B807F /* minback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB84BCE198123EE002B807F /* minback@2x.png */; };
 		2FB84BDD198123EE002B807F /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BD0198123EE002B807F /* NSBundle+Language.m */; };
@@ -73,6 +88,22 @@
 		2F1C60A0197C09E5004D3C2A /* AllianceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllianceTests-Info.plist"; sourceTree = "<group>"; };
 		2F1C60A2197C09E5004D3C2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F1C60A4197C09E5004D3C2A /* AllianceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllianceTests.m; sourceTree = "<group>"; };
+		2F9B6414198349D3003EF37F /* 我已出发.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我已出发.png"; sourceTree = "<group>"; };
+		2F9B6415198349D3003EF37F /* 接机.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "接机.png"; sourceTree = "<group>"; };
+		2F9B6416198349D3003EF37F /* 查看导航.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "查看导航.png"; sourceTree = "<group>"; };
+		2F9B6417198349D3003EF37F /* 查看导航_方向.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "查看导航_方向.png"; sourceTree = "<group>"; };
+		2F9B6418198349D3003EF37F /* 终点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "终点.png"; sourceTree = "<group>"; };
+		2F9B6419198349D3003EF37F /* 起点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "起点.png"; sourceTree = "<group>"; };
+		2F9B641A198349D3003EF37F /* 雷阵雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雷阵雨.png"; sourceTree = "<group>"; };
+		2F9B641B198349D3003EF37F /* 预约用车.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "预约用车.png"; sourceTree = "<group>"; };
+		2F9B6424198390D4003EF37F /* 订单提示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "订单提示.png"; sourceTree = "<group>"; };
+		2F9B6425198390D4003EF37F /* 返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回.png"; sourceTree = "<group>"; };
+		2F9B6426198390D4003EF37F /* 起点_订单提示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "起点_订单提示.png"; sourceTree = "<group>"; };
+		2F9B6427198390D4003EF37F /* 抢单.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "抢单.png"; sourceTree = "<group>"; };
+		2F9B6428198390D4003EF37F /* 终点_订单提示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "终点_订单提示.png"; sourceTree = "<group>"; };
+		2F9B6429198390D4003EF37F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		2F9B64301983B73F003EF37F /* MissionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionView.h; sourceTree = "<group>"; };
+		2F9B64311983B73F003EF37F /* MissionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionView.m; sourceTree = "<group>"; };
 		2FB84BCC198123EE002B807F /* DungeonsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DungeonsVC.h; sourceTree = "<group>"; };
 		2FB84BCD198123EE002B807F /* DungeonsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DungeonsVC.m; sourceTree = "<group>"; };
 		2FB84BCE198123EE002B807F /* minback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minback@2x.png"; sourceTree = "<group>"; };
@@ -170,19 +201,20 @@
 		2F1C607F197C09E4004D3C2A /* Alliance */ = {
 			isa = PBXGroup;
 			children = (
-				2FB84BFB19812D2B002B807F /* Cell */,
-				2FB84BCB198123EE002B807F /* Dungeons */,
-				2F563345197CBEA900974305 /* Service+bean */,
-				2F563344197CBEA200974305 /* Service */,
-				2F563343197CBE7100974305 /* VC+Detail */,
-				2F563342197CBE6300974305 /* VC */,
 				2F1C6088197C09E4004D3C2A /* AppDelegate.h */,
 				2F1C6089197C09E4004D3C2A /* AppDelegate.m */,
+				2FB84BFB19812D2B002B807F /* Cell */,
+				2FB84BCB198123EE002B807F /* Dungeons */,
+				2F9B6413198349D3003EF37F /* images */,
+				2F1C6091197C09E4004D3C2A /* Images.xcassets */,
 				2F1C608B197C09E4004D3C2A /* Main.storyboard */,
+				2F563344197CBEA200974305 /* Service */,
+				2F563345197CBEA900974305 /* Service+bean */,
+				2F1C6080197C09E4004D3C2A /* Supporting Files */,
+				2F563342197CBE6300974305 /* VC */,
+				2F563343197CBE7100974305 /* VC+Detail */,
 				2F1C608E197C09E4004D3C2A /* ViewController.h */,
 				2F1C608F197C09E4004D3C2A /* ViewController.m */,
-				2F1C6091197C09E4004D3C2A /* Images.xcassets */,
-				2F1C6080197C09E4004D3C2A /* Supporting Files */,
 			);
 			path = Alliance;
 			sourceTree = "<group>";
@@ -257,6 +289,27 @@
 			name = "Service+bean";
 			sourceTree = "<group>";
 		};
+		2F9B6413198349D3003EF37F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2F9B6424198390D4003EF37F /* 订单提示.png */,
+				2F9B6425198390D4003EF37F /* 返回.png */,
+				2F9B6426198390D4003EF37F /* 起点_订单提示.png */,
+				2F9B6427198390D4003EF37F /* 抢单.png */,
+				2F9B6428198390D4003EF37F /* 终点_订单提示.png */,
+				2F9B6429198390D4003EF37F /* bg.png */,
+				2F9B6414198349D3003EF37F /* 我已出发.png */,
+				2F9B6415198349D3003EF37F /* 接机.png */,
+				2F9B6416198349D3003EF37F /* 查看导航.png */,
+				2F9B6417198349D3003EF37F /* 查看导航_方向.png */,
+				2F9B6418198349D3003EF37F /* 终点.png */,
+				2F9B6419198349D3003EF37F /* 起点.png */,
+				2F9B641A198349D3003EF37F /* 雷阵雨.png */,
+				2F9B641B198349D3003EF37F /* 预约用车.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		2FB84BCB198123EE002B807F /* Dungeons */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +345,8 @@
 			children = (
 				2FB84BFC19813764002B807F /* MissionCell.h */,
 				2FB84BFD19813764002B807F /* MissionCell.m */,
+				2F9B64301983B73F003EF37F /* MissionView.h */,
+				2F9B64311983B73F003EF37F /* MissionView.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -373,11 +428,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9B6420198349D3003EF37F /* 终点.png in Resources */,
+				2F9B642E198390D4003EF37F /* 终点_订单提示.png in Resources */,
+				2F9B641D198349D3003EF37F /* 接机.png in Resources */,
+				2F9B641E198349D3003EF37F /* 查看导航.png in Resources */,
 				2F1C6092197C09E4004D3C2A /* Images.xcassets in Resources */,
+				2F9B6423198349D3003EF37F /* 预约用车.png in Resources */,
 				2F1C6084197C09E4004D3C2A /* InfoPlist.strings in Resources */,
+				2F9B642A198390D4003EF37F /* 订单提示.png in Resources */,
+				2F9B6421198349D3003EF37F /* 起点.png in Resources */,
+				2F9B6422198349D3003EF37F /* 雷阵雨.png in Resources */,
 				2F1C608D197C09E4004D3C2A /* Main.storyboard in Resources */,
+				2F9B642B198390D4003EF37F /* 返回.png in Resources */,
 				2FB84BDC198123EE002B807F /* minback@2x.png in Resources */,
 				2FBA0D78197CFEB100B8C280 /* Dungeons.strings in Resources */,
+				2F9B642F198390D4003EF37F /* bg.png in Resources */,
+				2F9B642D198390D4003EF37F /* 抢单.png in Resources */,
+				2F9B641F198349D3003EF37F /* 查看导航_方向.png in Resources */,
+				2F9B642C198390D4003EF37F /* 起点_订单提示.png in Resources */,
+				2F9B641C198349D3003EF37F /* 我已出发.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +468,7 @@
 				2FB84C0A1981F4F4002B807F /* NSMutableDictionary+Mission.m in Sources */,
 				2FB84BFE19813764002B807F /* MissionCell.m in Sources */,
 				2FB84BF91981281E002B807F /* UILabel+Util.m in Sources */,
+				2F9B64321983B73F003EF37F /* MissionView.m in Sources */,
 				2FB84BEE1981278C002B807F /* UndeadSideVC.m in Sources */,
 				2FB84C0119813876002B807F /* TheDarkPortal.m in Sources */,
 				2F1C6090197C09E4004D3C2A /* ViewController.m in Sources */,

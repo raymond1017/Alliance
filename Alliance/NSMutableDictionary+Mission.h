@@ -10,8 +10,9 @@
 
 @interface NSMutableDictionary(Mission)
 
--(NSArray*) mission_items;
+-(NSMutableArray*) mission_items;
 
+-(NSString*) mission_id;
 -(NSString*) mission_item_time;
 -(NSString*) mission_item_weather;
 -(NSString*) mission_item_begin;
