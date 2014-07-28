@@ -32,18 +32,18 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     int leftMargin = 40;
-    int topMargin = 15;
+    int topMargin = 12;
     if (self) {
         // Initialization code
         
-        UIFont* font = [UIFont systemFontOfSize:18];
+        UIFont* font = [UIFont systemFontOfSize:14];
         
         UIView* shadow = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.contentView.bounds.size.width, CELL_HEIGHT-20)];
         [shadow.layer setMasksToBounds:YES];
         [shadow.layer setCornerRadius:1];
-        [shadow.layer setBorderColor:[RGB(200, 200, 200) CGColor]];
+        [shadow.layer setBorderColor:[RGBA(200, 200, 200, 0.5) CGColor]];
         [shadow.layer setBorderWidth:1.0f];
-        [shadow.layer setShadowColor:[RGB(200, 200, 200) CGColor]];
+        [shadow.layer setShadowColor:[RGBA(200, 200, 200, 0.8) CGColor]];
         [shadow.layer setShadowOffset:CGSizeMake(0, -1)];
         [shadow.layer setShadowOpacity:1];
         [shadow.layer setShadowRadius:2.0];
@@ -57,14 +57,23 @@
         type.frame = CGRectMake(0, 1, type.image.size.width, type.image.size.height);
         [background addSubview:type];
         
-        UILabel* time = [[UILabel alloc] initWithFrame:CGRectMake(40, topMargin, 40, 20)];
+        UIView* border = [[UIView alloc] initWithFrame:CGRectMake(0, 0, background.frame.size.width, 40)];
+        [border.layer setBorderColor:[RGBA(200, 200, 200, 0.5) CGColor]];
+        [border.layer setBorderWidth:1.0f];
+//        [border.layer setShadowColor:[RGBA(200, 200, 200, 0.8) CGColor]];
+//        [border.layer setShadowOffset:CGSizeMake(0, -1)];
+//        [border.layer setShadowOpacity:1];
+//        [border.layer setShadowRadius:2.0];
+        [background addSubview:border];
+        
+        UILabel* time = [[UILabel alloc] initWithFrame:CGRectMake(50, topMargin, 60, 20)];
         [time setText:T_(@"Main_Cell_Time")];
         [time setFont:font];
 //        [time setBackgroundColor:[UIColor redColor]];
         [background addSubview:time];
         
         UILabel* timeDetail = [UILabel new];
-        timeDetail.frame = [UIHelper rightTo:time.frame margin:10 width:60 height:20];
+        timeDetail.frame = [UIHelper rightTo:time.frame margin:0 width:60 height:20];
 //        [timeDetail setBackgroundColor:[UIColor yellowColor]];
         [timeDetail setText:@"08:50"];
         [timeDetail setFont:font];
@@ -73,12 +82,12 @@
         [background addSubview:timeDetail];
         
         UIImageView* weather = IMAGEVIEW_SCALE(@"雷阵雨");
-        weather.frame = CGRectMake(background.frame.size.width - 110, topMargin, weather.image.size.width, weather.image.size.height);
+        weather.frame = CGRectMake(background.frame.size.width - 110, 10, weather.image.size.width, weather.image.size.height);
 //        [weather setBackgroundColor:[UIColor grayColor]];
         [background addSubview:weather];
         
         UILabel* label = [UILabel new];
-        label.frame = [UIHelper rightTo:weather.frame margin:8 width:60 height:20];
+        label.frame = CGRectMake(background.frame.size.width - 70, 12, 60, 20);
         [label setText:@"20℃"];
         [label setFont:font];
         
@@ -87,11 +96,11 @@
         
         {
             UIImageView* point = IMAGEVIEW_SCALE(@"起点");
-            point.frame = CGRectMake(20, 50, point.image.size.width, point.image.size.height);
+            point.frame = CGRectMake(20, 55, point.image.size.width, point.image.size.height);
             [background addSubview:point];
             
             UILabel* lab = [UILabel new];
-            lab.frame = CGRectMake(40, 45, 150, 20);
+            lab.frame = CGRectMake(40, 50, 150, 20);
             [background addSubview:lab];
             
             self.startPoint = lab;
@@ -99,11 +108,11 @@
         
         {
             UIImageView* point = IMAGEVIEW_SCALE(@"终点");
-            point.frame = CGRectMake(20, 80, point.image.size.width, point.image.size.height);
+            point.frame = CGRectMake(20, 85, point.image.size.width, point.image.size.height);
             [background addSubview:point];
             
             UILabel* lab = [UILabel new];
-            lab.frame = CGRectMake(40, 75, 150, 20);
+            lab.frame = CGRectMake(40, 80, 150, 20);
 //            [lab setText:@"hhhh"];
             [background addSubview:lab];
             
@@ -111,14 +120,15 @@
         }
         {
             UILabel* cost = [UILabel new];
-            [cost setFrame:CGRectMake(leftMargin, 105, 90, 30)];
+            [cost setFrame:CGRectMake(leftMargin, 105, 70, 30)];
 //            [cost setBackgroundColor:[UIColor blackColor]];
             [cost setTextColor:[UIColor colorWithRed:255.0/255.0 green:175.0/255.0 blue:37.0/255.0 alpha:1.0]];
             [cost setText:T_(@"Main_Cell_Bill")];
             
             UILabel* bill = [UILabel new];
-            [bill setFrame:[UIHelper rightTo:cost.frame margin:0 width:120 height:30]];
-//            [bill setText:@"350"];
+            [bill setFrame:[UIHelper rightTo:cost.frame margin:5 width:120 height:30]];
+            //            [bill setText:@"350"];
+            [bill setTextColor:[UIColor colorWithRed:255.0/255.0 green:175.0/255.0 blue:37.0/255.0 alpha:1.0]];
             self.bill = bill;
             [background addSubview:bill];
             [background addSubview:cost];
@@ -132,6 +142,7 @@
 //            [btn setBackgroundColor:[UIColor redColor]];
             [btn setBackgroundImage:IMAGE_SCALE(@"我已出发") forState:UIControlStateNormal];
             [btn.titleLabel setFont:[UIFont systemFontOfSize:15]];
+            [btn addTarget:self action:@selector(handleStart:) forControlEvents:UIControlEventTouchUpInside];
             [background addSubview:btn];
          
             self.btnLeft = btn;
@@ -178,5 +189,12 @@
     
     [self.bill setText:[mission mission_item_cost]];
 }
+
+- (void) handleStart:(id)sender {
+    UIButton* btn = (UIButton*)sender;
+    [btn setTitle:@"我已到达" forState:UIControlStateNormal];
+    [btn setBackgroundImage:IMAGE_SCALE(@"查看导航") forState:UIControlStateNormal];
+}
+
 
 @end

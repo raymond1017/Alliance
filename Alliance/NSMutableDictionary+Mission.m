@@ -28,11 +28,18 @@
 }
 
 -(NSString*) mission_item_begin {
-    return [self objectForKey:@"begin"];
+    
+//    [dict setObject:@"曼谷素万那普机场" forKey:@"begin"];
+//    [dict setObject:@"曼谷莲花大酒店" forKey:@"end"];
+    
+    return @"曼谷素万那普机场";
+//    return [self objectForKey:@"begin"];
 }
 
 -(NSString*) mission_item_end {
-    return [self objectForKey:@"end"];
+    
+    return @"曼谷莲花大酒店";
+//    return [self objectForKey:@"end"];
 }
 
 -(NSString*) mission_item_cost {

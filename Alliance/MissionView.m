@@ -40,14 +40,14 @@
         [missionDetail setImage:IMAGE_SCALE(@"订单提示")];
         {
             UILabel* label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, missionDetail.frame.size.width, 24)];
-            [label1 setText:@"一段文字1"];
+            [label1 setText:@"距离"];
             [label1 setTextAlignment:NSTextAlignmentCenter];
             [label1 setTextColor:[UIColor whiteColor]];
             [missionDetail addSubview:label1];
         }
         {
             UILabel* label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, missionDetail.frame.size.width, 24)];
-            [label1 setText:@"一段文字1"];
+            [label1 setText:@"1.5 公里"];
             [label1 setTextAlignment:NSTextAlignmentCenter];
             [label1 setTextColor:[UIColor whiteColor]];
             [label1 setFont:[UIFont boldSystemFontOfSize:22]];
@@ -55,7 +55,7 @@
         }
         {
             UILabel* label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 90, missionDetail.frame.size.width, 24)];
-            [label1 setText:@"一段文字1"];
+            [label1 setText:@"可赚 960"];
             [label1 setTextAlignment:NSTextAlignmentCenter];
             [label1 setTextColor:[UIColor whiteColor]];
             [missionDetail addSubview:label1];
@@ -99,6 +99,13 @@
             [missionDetail addSubview:startPoint];
         }
         
+        {
+            UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(0, 345, missionDetail.frame.size.width - 20, 20)];
+            [label setText:@"查看当前酒店相关信息"];
+            [label setTextAlignment:NSTextAlignmentCenter];
+            [missionDetail addSubview:label];
+        }
+        
         [missionBackground addSubview:missionDetail];
         
         [UIView animateWithDuration:0.4 animations:^{
@@ -111,6 +118,8 @@
                 {
                     UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(10, missionDetail.frame.origin.y + missionDetail.frame.size.height + offset, right.size.width, right.size.height)];
                     [btn setBackgroundImage:right forState:UIControlStateNormal];
+                    [btn setTitle:T_(@"Main_Mission_Back") forState:UIControlStateNormal];
+                    [btn addTarget:self action:@selector(handleBack:) forControlEvents:UIControlEventTouchUpInside];
                     [missionBackground addSubview:btn];
                 }
                 {
@@ -129,10 +138,9 @@
                     UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(missionBackground.frame.size.width - right.size.width - 10, missionDetail.frame.origin.y + missionDetail.frame.size.height + offset, right.size.width, right.size.height)];
                     [btn setBackgroundImage:right forState:UIControlStateNormal];
                     
-                    [btn setTitle:T_(@"Main_Mission_Back") forState:UIControlStateNormal];
+                    [btn setTitle:T_(@"Main_Mission_Offline") forState:UIControlStateNormal];
                     [missionBackground addSubview:btn];
                     
-                    [btn addTarget:self action:@selector(handleBack:) forControlEvents:UIControlEventTouchUpInside];
                 }
             }
         }];

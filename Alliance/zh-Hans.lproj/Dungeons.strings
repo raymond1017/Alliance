@@ -10,7 +10,7 @@
 
 "Main_Tab_Mission" = "待办事项";
 
-"Main_Cell_Time" = "时间";
+"Main_Cell_Time" = "接机时间";
 "Main_Cell_Bill" = "预估金额";
 
 "Main_Cell_Status_Confirm" = "我已出发";
@@ -24,3 +24,4 @@
 
 "Main_Mission_Accept" = "抢单";
 "Main_Mission_Back" = "返回";
+"Main_Mission_Offline" = "下班";
