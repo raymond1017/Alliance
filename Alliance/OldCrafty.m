@@ -8,6 +8,7 @@
 
 #import "OldCrafty.h"
 #import "TheDarkPortal.h"
+#import "UIView+Util.h"
 
 @implementation OldCrafty
 
@@ -22,8 +23,8 @@
                 NSMutableDictionary* dict = [NSMutableDictionary new];
                 [dict setObject:@"08:50" forKey:@"orderTime"];
                 [dict setObject:@"20℃" forKey:@"weather"];
-                [dict setObject:@"曼谷素万那普机场" forKey:@"begin"];
-                [dict setObject:@"曼谷莲花大酒店" forKey:@"end"];
+                [dict setObject:T_(@"Airport_1") forKey:@"begin"];
+                [dict setObject:T_(@"Hotel_1") forKey:@"end"];
                 [dict setObject:@"960" forKey:@"cost"];
                 [items addObject:dict];
             }
@@ -32,8 +33,8 @@
                 NSMutableDictionary* dict = [NSMutableDictionary new];
                 [dict setObject:@"08:50" forKey:@"orderTime"];
                 [dict setObject:@"20℃" forKey:@"weather"];
-                [dict setObject:@"曼谷素万那普机场" forKey:@"begin"];
-                [dict setObject:@"曼谷莲花大酒店" forKey:@"end"];
+                [dict setObject:T_(@"Airport_1") forKey:@"begin"];
+                [dict setObject:T_(@"Hotel_1") forKey:@"end"];
                 [dict setObject:@"960" forKey:@"cost"];
                 [items addObject:dict];
             }

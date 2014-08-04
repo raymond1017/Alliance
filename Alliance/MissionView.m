@@ -40,14 +40,14 @@
         [missionDetail setImage:IMAGE_SCALE(@"订单提示")];
         {
             UILabel* label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, missionDetail.frame.size.width, 24)];
-            [label1 setText:@"距离"];
+            [label1 setText:T_(@"Main_Mission_Distants")];
             [label1 setTextAlignment:NSTextAlignmentCenter];
             [label1 setTextColor:[UIColor whiteColor]];
             [missionDetail addSubview:label1];
         }
         {
             UILabel* label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, missionDetail.frame.size.width, 24)];
-            [label1 setText:@"1.5 公里"];
+            [label1 setText:T_(@"Fake_2")];
             [label1 setTextAlignment:NSTextAlignmentCenter];
             [label1 setTextColor:[UIColor whiteColor]];
             [label1 setFont:[UIFont boldSystemFontOfSize:22]];
@@ -55,7 +55,7 @@
         }
         {
             UILabel* label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 90, missionDetail.frame.size.width, 24)];
-            [label1 setText:@"可赚 960"];
+            [label1 setText:T_(@"Fake_Money_1")];
             [label1 setTextAlignment:NSTextAlignmentCenter];
             [label1 setTextColor:[UIColor whiteColor]];
             [missionDetail addSubview:label1];
@@ -101,7 +101,7 @@
         
         {
             UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(0, 345, missionDetail.frame.size.width - 20, 20)];
-            [label setText:@"查看当前酒店相关信息"];
+            [label setText:T_(@"Main_Mission_HotelDetail")];
             [label setTextAlignment:NSTextAlignmentCenter];
             [missionDetail addSubview:label];
         }

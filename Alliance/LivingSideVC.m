@@ -9,10 +9,11 @@
 #import "LivingSideVC.h"
 #import "MissionCell.h"
 #import "TheDarkPortal.h"
+#import "MapVC.h"
 #import "NSMutableDictionary+Mission.h"
 
-@interface LivingSideVC ()<UITableViewDelegate, UITableViewDataSource>
-@property (strong, nonatomic) NSArray* array;
+@interface LivingSideVC ()<UITableViewDelegate, UITableViewDataSource, MissionCellDelegate>
+@property (strong, nonatomic) NSMutableArray* array;
 @property (weak, nonatomic) UITableView* tableView;
 @end
 
@@ -45,6 +46,7 @@
         table.dataSource = self;
         table.delegate = self;
         table.backgroundColor = [UIColor clearColor];
+        [table setRowHeight:CELL_HEIGHT];
         self.tableView = table;
         [container addSubview:table];
     }
@@ -123,11 +125,24 @@
     MissionCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if(cell == nil) {
         cell = [[MissionCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell.missionDelegate = self;
     }
-    
     [cell setMission:item];
-    
-//    [cell setStorageItems:pairItem];
     return cell;
+}
+
+
+-(void) handleMissionCellDetail:(NSMutableDictionary*) mission {
+    MapVC* vc = [MapVC new];
+    vc.orderID = [mission mission_id];
+    if(vc.orderID == nil)
+        return;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+
+-(void) appendMission:(NSMutableDictionary*)mission {
+    [self.array addObject:mission];
+    [self.tableView reloadData];
 }
 @end

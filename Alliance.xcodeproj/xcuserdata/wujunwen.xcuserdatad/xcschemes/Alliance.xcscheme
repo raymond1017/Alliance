@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F1C6075197C09E4004D3C2A"
-               BuildableName = "Alliance.app"
+               BuildableName = "&#x5f53;&#x5730;&#x53f8;&#x673a;&#x7248;.app"
                BlueprintName = "Alliance"
                ReferencedContainer = "container:Alliance.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F1C6075197C09E4004D3C2A"
-            BuildableName = "Alliance.app"
+            BuildableName = "&#x5f53;&#x5730;&#x53f8;&#x673a;&#x7248;.app"
             BlueprintName = "Alliance"
             ReferencedContainer = "container:Alliance.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F1C6075197C09E4004D3C2A"
-            BuildableName = "Alliance.app"
+            BuildableName = "&#x5f53;&#x5730;&#x53f8;&#x673a;&#x7248;.app"
             BlueprintName = "Alliance"
             ReferencedContainer = "container:Alliance.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F1C6075197C09E4004D3C2A"
-            BuildableName = "Alliance.app"
+            BuildableName = "&#x5f53;&#x5730;&#x53f8;&#x673a;&#x7248;.app"
             BlueprintName = "Alliance"
             ReferencedContainer = "container:Alliance.xcodeproj">
          </BuildableReference>

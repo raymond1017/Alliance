@@ -52,6 +52,8 @@
     if(errorCode != 0){
         
         NSLog(@"Http Request Fail Request: %@ HttpCode: %ld Domain: %@", [request.URL absoluteString], errorCode, [error domain]);
+        if(onFailure == nil)
+            return;
         onFailure(nil);
         return;
     }
@@ -76,12 +78,17 @@
             break;
         }
         
+        if(onSucceed == nil)
+            return;
+        
         onSucceed([responseData response_business]);
         return;
     }while (false);
     
     NSLog(@"Http Request Fail Request: %@ RespCode: %@ Desc: %@", [request.URL absoluteString], code, desc);
     
+    if(onFailure == nil)
+        return;
     onFailure([responseData response_status]);
 }
 
@@ -113,6 +120,25 @@
     [reqData setObject:driverID forKey:@"driverId"];
     [reqData setObject:orderID forKey:@"orderId"];
     [self executeRequest:[TheDarkPortal makeUrlWithMethod:COMMIT_MISSION_CONFIRM] requestData:reqData onSucceed:response onFailure:failure];
+}
+
++(void) changeMissionStatus:(NSString*)orderID
+                  andStatus:(enum OrderStatus) status
+                  onSucceed:(void(^) (NSMutableDictionary* response)) response
+                  onFailure:(void(^) (NSMutableDictionary* status)) failure {
+    
+    NSMutableDictionary* reqData = [NSMutableDictionary new];
+    [reqData setObject:orderID forKey:@"orderId"];
+    NSString* ret = nil;
+    if(status == Status_Free){
+        ret = @"free";
+    }else if(status == Status_Busy){
+        ret = @"busy";
+    }else if(status == Status_Waiting){
+        ret = @"waiting";
+    }
+    [reqData setObject:ret forKey:@"status"];
+    [self executeRequest:[TheDarkPortal makeUrlWithMethod:COMMIT_MISSION_STATUS] requestData:reqData onSucceed:response onFailure:failure];
 }
 
 +(NSMutableURLRequest*) makeUrlWithMethod:(NSString *)method {

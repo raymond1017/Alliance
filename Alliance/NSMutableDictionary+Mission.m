@@ -7,6 +7,7 @@
 //
 
 #import "NSMutableDictionary+Mission.h"
+#import "UIView+Util.h"
 
 @implementation NSMutableDictionary(Mission)
 
@@ -32,13 +33,13 @@
 //    [dict setObject:@"曼谷素万那普机场" forKey:@"begin"];
 //    [dict setObject:@"曼谷莲花大酒店" forKey:@"end"];
     
-    return @"曼谷素万那普机场";
+    return T_(@"Airport_1");
 //    return [self objectForKey:@"begin"];
 }
 
 -(NSString*) mission_item_end {
     
-    return @"曼谷莲花大酒店";
+    return T_(@"Hotel_1");
 //    return [self objectForKey:@"end"];
 }
 

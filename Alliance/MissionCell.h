@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 
 #define CELL_HEIGHT 200
+
+@protocol MissionCellDelegate <NSObject>
+-(void) handleMissionCellDetail:(NSMutableDictionary*) mission;
+
+@end
+
+
 @interface MissionCell : UITableViewCell
 @property (strong, nonatomic) NSMutableDictionary* mission;
+
+@property (assign, nonatomic) id<MissionCellDelegate> missionDelegate;
 @end

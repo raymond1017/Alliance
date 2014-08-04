@@ -11,6 +11,7 @@
 #import "UILabel+Util.h"
 #import "UIHelper.h"
 #import "NSMutableDictionary+Mission.h"
+#import "TheDarkPortal.h"
 
 @interface MissionCell()
 @property (weak, nonatomic) UILabel* timeDetail;
@@ -35,18 +36,18 @@
     int topMargin = 12;
     if (self) {
         // Initialization code
-        
         UIFont* font = [UIFont systemFontOfSize:14];
+//        [self.contentView setFrame:CGRectMake(0, 0, self.contentView.frame.size.width, CELL_HEIGHT)];
         
         UIView* shadow = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.contentView.bounds.size.width, CELL_HEIGHT-20)];
         [shadow.layer setMasksToBounds:YES];
         [shadow.layer setCornerRadius:1];
         [shadow.layer setBorderColor:[RGBA(200, 200, 200, 0.5) CGColor]];
         [shadow.layer setBorderWidth:1.0f];
-        [shadow.layer setShadowColor:[RGBA(200, 200, 200, 0.8) CGColor]];
-        [shadow.layer setShadowOffset:CGSizeMake(0, -1)];
-        [shadow.layer setShadowOpacity:1];
-        [shadow.layer setShadowRadius:2.0];
+//        [shadow.layer setShadowColor:[RGBA(200, 200, 200, 0.8) CGColor]];
+//        [shadow.layer setShadowOffset:CGSizeMake(0, -1)];
+//        [shadow.layer setShadowOpacity:1];
+//        [shadow.layer setShadowRadius:2.0];
         
         [self setBackgroundColor:[UIColor clearColor]];
         UIView* background = [[UIView alloc] initWithFrame:CGRectMake(0, 20, self.contentView.bounds.size.width, CELL_HEIGHT-20)];
@@ -100,7 +101,8 @@
             [background addSubview:point];
             
             UILabel* lab = [UILabel new];
-            lab.frame = CGRectMake(40, 50, 150, 20);
+            lab.frame = CGRectMake(40, 50, 250, 20);
+//            [lab setBackgroundColor:[UIColor redColor]];
             [background addSubview:lab];
             
             self.startPoint = lab;
@@ -112,15 +114,15 @@
             [background addSubview:point];
             
             UILabel* lab = [UILabel new];
-            lab.frame = CGRectMake(40, 80, 150, 20);
-//            [lab setText:@"hhhh"];
+            lab.frame = CGRectMake(40, 80, 250, 20);
+//            [lab setBackgroundColor:[UIColor redColor]];
             [background addSubview:lab];
             
             self.endPoint = lab;
         }
         {
             UILabel* cost = [UILabel new];
-            [cost setFrame:CGRectMake(leftMargin, 105, 70, 30)];
+            [cost setFrame:CGRectMake(leftMargin, 105, 100, 30)];
 //            [cost setBackgroundColor:[UIColor blackColor]];
             [cost setTextColor:[UIColor colorWithRed:255.0/255.0 green:175.0/255.0 blue:37.0/255.0 alpha:1.0]];
             [cost setText:T_(@"Main_Cell_Bill")];
@@ -156,12 +158,13 @@
             [background addSubview:btn];
             
             UIImageView* img = IMAGEVIEW_SCALE(@"查看导航_方向");
-            img.frame = CGRectMake(btn.frame.size.width - img.image.size.width - 10, 7, img.image.size.width, img.image.size.height);
+            img.frame = CGRectMake(btn.frame.size.width - img.image.size.width - 5, 7, img.image.size.width, img.image.size.height);
             [btn addSubview:img];
+            [btn addTarget:self action:@selector(handleDetail:) forControlEvents:UIControlEventTouchUpInside];
             
             self.btnRight = btn;
         }
-        
+//        [self.contentView setFrame:CGRectMake(0, 0, self.contentView.frame.size.width, CELL_HEIGHT)];
         [self.contentView addSubview:background];
     }
     return self;
@@ -180,7 +183,7 @@
 }
 
 - (void)setMission:(NSMutableDictionary *)mission {
-    
+    _mission = mission;
     [self.timeDetail setText:[mission mission_item_time]];
     [self.weatherDetail setText:[mission mission_item_weather]];
     
@@ -192,8 +195,17 @@
 
 - (void) handleStart:(id)sender {
     UIButton* btn = (UIButton*)sender;
-    [btn setTitle:@"我已到达" forState:UIControlStateNormal];
+    [btn setTitle:T_(@"Main_Cell_Status_Arrived") forState:UIControlStateNormal];
     [btn setBackgroundImage:IMAGE_SCALE(@"查看导航") forState:UIControlStateNormal];
+ 
+    [self.mission mission_id];
+    if([self.mission mission_id] == nil)
+        return;
+    [TheDarkPortal changeMissionStatus:[self.mission mission_id] andStatus:Status_Busy onSucceed:nil onFailure:nil ];
+}
+
+- (void) handleDetail:(id)sender {
+    [self.missionDelegate handleMissionCellDetail:self.mission];
 }
 
 

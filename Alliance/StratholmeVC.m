@@ -18,6 +18,9 @@
 @property (strong, nonatomic) UIView* mission_background;
 
 @property (strong, nonatomic) NSMutableArray* missions;
+
+@property (weak, nonatomic) LivingSideVC* leftVC;
+@property (weak, nonatomic) UndeadSideVC* rightVC;
 @end
 
 @implementation StratholmeVC
@@ -39,11 +42,14 @@
     LivingSideVC* item1 = [LivingSideVC new];
     UndeadSideVC* item2 = [UndeadSideVC new];
     
+    self.leftVC = item1;
+    self.rightVC = item2;
+    
     item1.tabBarHeight = self.tabBar.frame.size.height;
     item2.tabBarHeight = self.tabBar.frame.size.height;
     
-    item1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"hello 1" image:nil selectedImage:nil];
-    item2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"hello 2" image:nil selectedImage:nil];
+    item1.tabBarItem = [[UITabBarItem alloc] initWithTitle:T_(@"Main_Tab_Mission") image:IMAGE_SCALE(@"待办") selectedImage:nil];
+    item2.tabBarItem = [[UITabBarItem alloc] initWithTitle:T_(@"Main_Tab_Self") image:IMAGE_SCALE(@"我的_normal") selectedImage:nil];
     
     [self addChildViewController:item1];
     [self addChildViewController:item2];
@@ -126,9 +132,40 @@
 }
 
 
+// lock direction
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation != UIInterfaceOrientationMaskPortrait);
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+-(BOOL)shouldAutorotate
+{
+    return YES;
+}
+
 #pragma mark - handler mission
 
 -(void) handleAcceptMission:(NSMutableDictionary *)mission {
+    
+    NSMutableDictionary* dict = [NSMutableDictionary new];
+    [dict setObject:@"08:50" forKey:@"orderTime"];
+    [dict setObject:@"20℃" forKey:@"weather"];
+    [dict setObject:T_(@"Airport_1") forKey:@"begin"];
+    [dict setObject:T_(@"" ) forKey:@"end"];
+    [dict setObject:@"960" forKey:@"cost"];
+    [dict setObject:[mission mission_id] forKey:@"orderId"];
+    
+    [self.leftVC appendMission:dict];
+    
     [TheDarkPortal commitMissionConfirm:[mission mission_item_time] andOrderID:[mission mission_id] onSucceed:^(NSMutableDictionary* succeed){
         
     }onFailure:^(NSMutableDictionary* status){

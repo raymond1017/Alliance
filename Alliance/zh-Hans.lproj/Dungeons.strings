@@ -20,8 +20,30 @@
 "Main_Mission_Start" = "起点";
 "Main_Mission_End" = "终点";
 
-"Main_Cell_ViewCheckPoint" = "查看导航";
+"Main_Cell_ViewCheckPoint" = "导航到接客点";
 
 "Main_Mission_Accept" = "抢单";
 "Main_Mission_Back" = "返回";
 "Main_Mission_Offline" = "下班";
+"Main_Mission_HotelDetail" = "查看酒店相关信息";
+"Main_Mission_Distants" = "距离";
+
+"Main_Map_Title" = "路线详情";
+"Main_Map_INFO1" = "接单成功";
+"Main_Map_Action" = "收起";
+"Main_Map_Arrived" = "我已到达乘车点";
+"Main_Map_Location" = "当前位置";
+"Main_Map_Distant" = "距离你约1.5公里，大约5分钟内到达";
+
+"Main_Tab_Mission" = "待办事项";
+"Main_Tab_Self" = "我的";
+
+
+"Common_Back" = "返回";
+
+
+"Airport_1" = "曼谷素万那普机场";
+"Hotel_1" = "曼谷莲花大酒店";
+
+"Fake_Money_1" = "可赚 960";
+"Fake_2" = "1.5 公里";

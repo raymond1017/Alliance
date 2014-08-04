@@ -10,4 +10,5 @@
 
 @interface LivingSideVC : DungeonsVC
 
+-(void) appendMission:(NSMutableDictionary*)mission;
 @end

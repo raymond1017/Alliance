@@ -21,6 +21,9 @@
 		2F1C609B197C09E5004D3C2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1C607D197C09E4004D3C2A /* UIKit.framework */; };
 		2F1C60A3197C09E5004D3C2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F1C60A1197C09E5004D3C2A /* InfoPlist.strings */; };
 		2F1C60A5197C09E5004D3C2A /* AllianceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C60A4197C09E5004D3C2A /* AllianceTests.m */; };
+		2F7498631986548E00AE2608 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7498621986548E00AE2608 /* MapVC.m */; };
+		2F749865198654D900AE2608 /* map0000.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F749864198654D900AE2608 /* map0000.png */; };
+		2F7498671986592300AE2608 /* 启用导航.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F7498661986592300AE2608 /* 启用导航.png */; };
 		2F9B641C198349D3003EF37F /* 我已出发.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6414198349D3003EF37F /* 我已出发.png */; };
 		2F9B641D198349D3003EF37F /* 接机.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6415198349D3003EF37F /* 接机.png */; };
 		2F9B641E198349D3003EF37F /* 查看导航.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6416198349D3003EF37F /* 查看导航.png */; };
@@ -36,6 +39,16 @@
 		2F9B642E198390D4003EF37F /* 终点_订单提示.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6428198390D4003EF37F /* 终点_订单提示.png */; };
 		2F9B642F198390D4003EF37F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6429198390D4003EF37F /* bg.png */; };
 		2F9B64321983B73F003EF37F /* MissionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B64311983B73F003EF37F /* MissionView.m */; };
+		2F9B6C701987C32400ED8936 /* 待办.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C6F1987C32400ED8936 /* 待办.png */; };
+		2F9B6C721987C3B900ED8936 /* 我的_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C711987C3B900ED8936 /* 我的_normal.png */; };
+		2F9B6C7B1987C7B900ED8936 /* icon512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C731987C7B900ED8936 /* icon512@2x.png */; };
+		2F9B6C7C1987C7B900ED8936 /* icon144@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C741987C7B900ED8936 /* icon144@2x.png */; };
+		2F9B6C7D1987C7B900ED8936 /* icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C751987C7B900ED8936 /* icon57@2x.png */; };
+		2F9B6C7E1987C7B900ED8936 /* icon58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C761987C7B900ED8936 /* icon58@2x.png */; };
+		2F9B6C7F1987C7B900ED8936 /* icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C771987C7B900ED8936 /* icon29@2x.png */; };
+		2F9B6C801987C7B900ED8936 /* icon80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C781987C7B900ED8936 /* icon80@2x.png */; };
+		2F9B6C811987C7B900ED8936 /* icon114@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C791987C7B900ED8936 /* icon114@2x.png */; };
+		2F9B6C821987C7B900ED8936 /* icon120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B6C7A1987C7B900ED8936 /* icon120@2x.png */; };
 		2FB84BDB198123EE002B807F /* DungeonsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BCD198123EE002B807F /* DungeonsVC.m */; };
 		2FB84BDC198123EE002B807F /* minback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FB84BCE198123EE002B807F /* minback@2x.png */; };
 		2FB84BDD198123EE002B807F /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84BD0198123EE002B807F /* NSBundle+Language.m */; };
@@ -69,7 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F1C6076197C09E4004D3C2A /* Alliance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alliance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1C6076197C09E4004D3C2A /* 当地司机版.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "当地司机版.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F1C6079197C09E4004D3C2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F1C607B197C09E4004D3C2A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2F1C607D197C09E4004D3C2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -88,6 +101,11 @@
 		2F1C60A0197C09E5004D3C2A /* AllianceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllianceTests-Info.plist"; sourceTree = "<group>"; };
 		2F1C60A2197C09E5004D3C2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F1C60A4197C09E5004D3C2A /* AllianceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllianceTests.m; sourceTree = "<group>"; };
+		2F6629B21986AB4300DD28E9 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Dungeons.strings; sourceTree = "<group>"; };
+		2F7498611986548E00AE2608 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		2F7498621986548E00AE2608 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		2F749864198654D900AE2608 /* map0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map0000.png; sourceTree = "<group>"; };
+		2F7498661986592300AE2608 /* 启用导航.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启用导航.png"; sourceTree = "<group>"; };
 		2F9B6414198349D3003EF37F /* 我已出发.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我已出发.png"; sourceTree = "<group>"; };
 		2F9B6415198349D3003EF37F /* 接机.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "接机.png"; sourceTree = "<group>"; };
 		2F9B6416198349D3003EF37F /* 查看导航.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "查看导航.png"; sourceTree = "<group>"; };
@@ -104,6 +122,16 @@
 		2F9B6429198390D4003EF37F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		2F9B64301983B73F003EF37F /* MissionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionView.h; sourceTree = "<group>"; };
 		2F9B64311983B73F003EF37F /* MissionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionView.m; sourceTree = "<group>"; };
+		2F9B6C6F1987C32400ED8936 /* 待办.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "待办.png"; sourceTree = "<group>"; };
+		2F9B6C711987C3B900ED8936 /* 我的_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的_normal.png"; sourceTree = "<group>"; };
+		2F9B6C731987C7B900ED8936 /* icon512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon512@2x.png"; sourceTree = "<group>"; };
+		2F9B6C741987C7B900ED8936 /* icon144@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon144@2x.png"; sourceTree = "<group>"; };
+		2F9B6C751987C7B900ED8936 /* icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon57@2x.png"; sourceTree = "<group>"; };
+		2F9B6C761987C7B900ED8936 /* icon58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon58@2x.png"; sourceTree = "<group>"; };
+		2F9B6C771987C7B900ED8936 /* icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon29@2x.png"; sourceTree = "<group>"; };
+		2F9B6C781987C7B900ED8936 /* icon80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon80@2x.png"; sourceTree = "<group>"; };
+		2F9B6C791987C7B900ED8936 /* icon114@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon114@2x.png"; sourceTree = "<group>"; };
+		2F9B6C7A1987C7B900ED8936 /* icon120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon120@2x.png"; sourceTree = "<group>"; };
 		2FB84BCC198123EE002B807F /* DungeonsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DungeonsVC.h; sourceTree = "<group>"; };
 		2FB84BCD198123EE002B807F /* DungeonsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DungeonsVC.m; sourceTree = "<group>"; };
 		2FB84BCE198123EE002B807F /* minback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minback@2x.png"; sourceTree = "<group>"; };
@@ -181,7 +209,7 @@
 		2F1C6077197C09E4004D3C2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F1C6076197C09E4004D3C2A /* Alliance.app */,
+				2F1C6076197C09E4004D3C2A /* 当地司机版.app */,
 				2F1C6097197C09E5004D3C2A /* AllianceTests.xctest */,
 			);
 			name = Products;
@@ -265,6 +293,8 @@
 		2F563343197CBE7100974305 /* VC+Detail */ = {
 			isa = PBXGroup;
 			children = (
+				2F7498611986548E00AE2608 /* MapVC.h */,
+				2F7498621986548E00AE2608 /* MapVC.m */,
 			);
 			name = "VC+Detail";
 			sourceTree = "<group>";
@@ -292,6 +322,18 @@
 		2F9B6413198349D3003EF37F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2F9B6C711987C3B900ED8936 /* 我的_normal.png */,
+				2F9B6C731987C7B900ED8936 /* icon512@2x.png */,
+				2F9B6C741987C7B900ED8936 /* icon144@2x.png */,
+				2F9B6C751987C7B900ED8936 /* icon57@2x.png */,
+				2F9B6C761987C7B900ED8936 /* icon58@2x.png */,
+				2F9B6C771987C7B900ED8936 /* icon29@2x.png */,
+				2F9B6C781987C7B900ED8936 /* icon80@2x.png */,
+				2F9B6C791987C7B900ED8936 /* icon114@2x.png */,
+				2F9B6C7A1987C7B900ED8936 /* icon120@2x.png */,
+				2F9B6C6F1987C32400ED8936 /* 待办.png */,
+				2F7498661986592300AE2608 /* 启用导航.png */,
+				2F749864198654D900AE2608 /* map0000.png */,
 				2F9B6424198390D4003EF37F /* 订单提示.png */,
 				2F9B6425198390D4003EF37F /* 返回.png */,
 				2F9B6426198390D4003EF37F /* 起点_订单提示.png */,
@@ -368,7 +410,7 @@
 			);
 			name = Alliance;
 			productName = Alliance;
-			productReference = 2F1C6076197C09E4004D3C2A /* Alliance.app */;
+			productReference = 2F1C6076197C09E4004D3C2A /* 当地司机版.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2F1C6096197C09E5004D3C2A /* AllianceTests */ = {
@@ -411,6 +453,7 @@
 				en,
 				Base,
 				"zh-Hans",
+				th,
 			);
 			mainGroup = 2F1C606D197C09E4004D3C2A;
 			productRefGroup = 2F1C6077197C09E4004D3C2A /* Products */;
@@ -430,22 +473,34 @@
 			files = (
 				2F9B6420198349D3003EF37F /* 终点.png in Resources */,
 				2F9B642E198390D4003EF37F /* 终点_订单提示.png in Resources */,
+				2F9B6C701987C32400ED8936 /* 待办.png in Resources */,
 				2F9B641D198349D3003EF37F /* 接机.png in Resources */,
+				2F9B6C7C1987C7B900ED8936 /* icon144@2x.png in Resources */,
 				2F9B641E198349D3003EF37F /* 查看导航.png in Resources */,
 				2F1C6092197C09E4004D3C2A /* Images.xcassets in Resources */,
 				2F9B6423198349D3003EF37F /* 预约用车.png in Resources */,
 				2F1C6084197C09E4004D3C2A /* InfoPlist.strings in Resources */,
 				2F9B642A198390D4003EF37F /* 订单提示.png in Resources */,
+				2F9B6C721987C3B900ED8936 /* 我的_normal.png in Resources */,
 				2F9B6421198349D3003EF37F /* 起点.png in Resources */,
+				2F9B6C7E1987C7B900ED8936 /* icon58@2x.png in Resources */,
 				2F9B6422198349D3003EF37F /* 雷阵雨.png in Resources */,
+				2F9B6C7B1987C7B900ED8936 /* icon512@2x.png in Resources */,
 				2F1C608D197C09E4004D3C2A /* Main.storyboard in Resources */,
+				2F9B6C801987C7B900ED8936 /* icon80@2x.png in Resources */,
 				2F9B642B198390D4003EF37F /* 返回.png in Resources */,
+				2F749865198654D900AE2608 /* map0000.png in Resources */,
+				2F9B6C821987C7B900ED8936 /* icon120@2x.png in Resources */,
 				2FB84BDC198123EE002B807F /* minback@2x.png in Resources */,
 				2FBA0D78197CFEB100B8C280 /* Dungeons.strings in Resources */,
 				2F9B642F198390D4003EF37F /* bg.png in Resources */,
 				2F9B642D198390D4003EF37F /* 抢单.png in Resources */,
+				2F9B6C7D1987C7B900ED8936 /* icon57@2x.png in Resources */,
 				2F9B641F198349D3003EF37F /* 查看导航_方向.png in Resources */,
 				2F9B642C198390D4003EF37F /* 起点_订单提示.png in Resources */,
+				2F7498671986592300AE2608 /* 启用导航.png in Resources */,
+				2F9B6C7F1987C7B900ED8936 /* icon29@2x.png in Resources */,
+				2F9B6C811987C7B900ED8936 /* icon114@2x.png in Resources */,
 				2F9B641C198349D3003EF37F /* 我已出发.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +535,7 @@
 				2FB84C041981F259002B807F /* OldCrafty.m in Sources */,
 				2FB84BDE198123EE002B807F /* NSMutableDictionary+Request.m in Sources */,
 				2FB84BDF198123EE002B807F /* NSMutableDictionary+Response.m in Sources */,
+				2F7498631986548E00AE2608 /* MapVC.m in Sources */,
 				2F1C6086197C09E4004D3C2A /* main.m in Sources */,
 				2FB84BFA1981281E002B807F /* UIView+Util.m in Sources */,
 				2FB84BEB1981276E002B807F /* LivingSideVC.m in Sources */,
@@ -537,6 +593,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2FBA0D7B197CFEDA00B8C280 /* zh-Hans */,
+				2F6629B21986AB4300DD28E9 /* th */,
 			);
 			name = Dungeons.strings;
 			sourceTree = "<group>";
@@ -560,8 +617,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZHAOHUI SUN (PHU454DK2H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ZHAOHUI SUN (PHU454DK2H)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -621,10 +678,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZHAOHUI SUN (PHU454DK2H)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alliance/Alliance-Prefix.pch";
 				INFOPLIST_FILE = "Alliance/Alliance-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "当地司机版";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -634,10 +692,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZHAOHUI SUN (PHU454DK2H)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alliance/Alliance-Prefix.pch";
 				INFOPLIST_FILE = "Alliance/Alliance-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "当地司机版";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

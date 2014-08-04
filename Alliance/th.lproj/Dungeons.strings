@@ -1,0 +1,49 @@
+/* 
+  Dungeons.strings
+  Alliance
+
+  Created by junwen.wu on 14-7-21.
+  Copyright (c) 2014年 Bwl. All rights reserved.
+*/
+
+"Application_Name" = "ไดรเวอร์รุ่น";
+
+"Main_Tab_Mission" = "ทำ";
+
+"Main_Cell_Time" = "เวลากระบะ";
+"Main_Cell_Bill" = "จำนวนประมาณ";
+
+"Main_Cell_Status_Confirm" = "ฉันได้รับการเริ่มต้น";
+"Main_Cell_Status_Arrived" = "ฉันได้มาถึง";
+"Main_Cell_status_Picking" = "ฉันรับ";
+
+"Main_Mission_Start" = "จุดเริ่มต้น";
+"Main_Mission_End" = "ปลาย";
+
+"Main_Cell_ViewCheckPoint" = "นำทางไปยังจุดรับ";
+
+"Main_Mission_Accept" = "คว้าหนึ่ง";
+"Main_Mission_Back" = "กลับ";
+"Main_Mission_Offline" = "ทำงาน";
+"Main_Mission_HotelDetail" = "ดูข้อมูลเกี่ยวกับโรงแรม";
+"Main_Mission_Distants" = "ระยะทาง";
+
+
+"Main_Map_Title" = "รายละเอียดเส้นทาง";
+"Main_Map_INFO1" = "คำสั่งซื้อที่ประสบความสำเร็จ";
+"Main_Map_Action" = "ล่มสลาย";
+"Main_Map_Arrived" = "ฉันได้มาถึงจุดโดยรถยนต์";
+"Main_Map_Location" = "ตำแหน่งปัจจุบัน";
+"Main_Map_Distant" = "ระยะทางประมาณ 1.5 กิโลเมตรจะถึงในประมาณห้านาที";
+
+"Main_Tab_Mission" = "ทำ";
+"Main_Tab_Self" = "ของฉัน";
+
+
+"Common_Back" = "กลับ";
+
+"Airport_1" = "กรุงเทพฯสนามบินสุวรรณภูมิ";
+"Hotel_1" = "กรุงเทพโลตัส";
+
+"Fake_Money_1" = "ได้รับ 960";
+"Fake_2" = "1.5 กิโลเมตร";
